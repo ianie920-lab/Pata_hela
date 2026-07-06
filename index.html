@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+<title>Patahela — Fast Loans, Anytime, Anywhere in Africa</title>
+<meta name="description" content="Apply for a loan in under 2 minutes and get an instant decision." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ SPLASH SCREEN ============ -->
+<section id="splash" class="splash">
+  <div class="splash-glow"></div>
+  <div class="splash-logo">
+    <div class="logo-mark">P</div>
+    <div class="logo-word">Patahela</div>
+  </div>
+  <div class="splash-tag">Pata hela. Fast, fair, on your phone.</div>
+</section>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar glass" id="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-mark">P</span>
+      <span class="brand-word">Patahela</span>
+    </div>
+    <button id="darkToggle" class="icon-btn" aria-label="Toggle dark mode"><i class="fa-solid fa-moon" id="darkToggleIcon"></i></button>
+  </div>
+</header>
+
+<main id="app">
+
+  <!-- ============ LANDING PAGE ============ -->
+  <section id="view-landing" class="view active">
+    <div class="hero">
+      <div class="hero-shape shape-1"></div>
+      <div class="hero-shape shape-2"></div>
+      <span class="badge badge-trust"><i class="fa-solid fa-lock"></i> Secure application</span>
+      <h1 class="hero-title">Fast Loans.<br>Anytime. Anywhere in Africa.</h1>
+      <p class="hero-sub">Apply in minutes and get an instant decision.</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary btn-lg" data-nav="view-form">Apply Now</button>
+        <button class="btn btn-ghost btn-lg" data-nav="view-learn">Learn More</button>
+      </div>
+      <div class="trust-row">
+        <span><i class="fa-solid fa-circle-check"></i> No hidden fees</span>
+        <span><i class="fa-solid fa-bolt"></i> 2-minute application</span>
+        <span><i class="fa-solid fa-handshake"></i> Personal follow-up</span>
+      </div>
+
+      <!-- Animated card stack -->
+      <div class="card-stack" id="cardStack">
+        <div class="card-stack-inner" id="cardStackInner">
+          <div class="orbit-ring"></div>
+          <div class="glow-ring"></div>
+          <div class="float-chip chip-top">
+            <span class="sparkline"><span></span><span></span><span></span><span></span><span></span></span>
+            Approval likelihood 92%
+          </div>
+          <div class="loan-card card-back">
+            <span class="loan-card-brand">PATAHELA</span>
+            <span class="loan-card-number">•••• •••• •••• 3294</span>
+            <div class="loan-card-row">
+              <div>
+                <span class="loan-card-label">Applicant</span>
+                <strong>Bianca T.</strong>
+              </div>
+              <div>
+                <span class="loan-card-label">Limit</span>
+                <strong>KES 500,000</strong>
+              </div>
+            </div>
+          </div>
+          <div class="loan-card card-front">
+            <button class="flip-btn glass" id="flipBtn" aria-label="Flip card">⟲</button>
+            <div class="flip-inner" id="flipInner">
+              <div class="card-face card-face-front">
+                <span class="loan-card-brand">PATAHELA</span>
+                <span class="loan-card-number">5337 8662 4901 3294</span>
+                <div class="loan-card-row">
+                  <div>
+                    <span class="loan-card-label">Status</span>
+                    <strong>Pre-Approved <i class="fa-solid fa-circle-check"></i></strong>
+                  </div>
+                  <div>
+                    <span class="loan-card-label">Term</span>
+                    <strong>6 months</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="card-face card-face-back">
+                <span class="loan-card-brand">PATAHELA</span>
+                <div class="verify-pattern" aria-hidden="true"></div>
+                <div>
+                  <span class="loan-card-label">Application ref</span>
+                  <strong>PTH-284910</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="float-chip chip-bottom"><i class="fa-solid fa-chart-line"></i> Instant decision</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Partner / network marquee -->
+    <div class="partner-strip">
+      <span class="partner-label">Works with</span>
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>M-PESA</span><span>MTN MOMO</span><span>AIRTEL MONEY</span><span>PAYSTACK</span><span>FLUTTERWAVE</span>
+          <span>M-PESA</span><span>MTN MOMO</span><span>AIRTEL MONEY</span><span>PAYSTACK</span><span>FLUTTERWAVE</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Security / trust strip -->
+    <div class="security-strip">
+      <span><i class="fa-solid fa-lock"></i> Encrypted application</span>
+      <span><i class="fa-solid fa-shield-halved"></i> Data protected</span>
+      <span><i class="fa-solid fa-mobile-screen"></i> Works with M-Pesa, MTN, Airtel Money &amp; more</span>
+    </div>
+
+    <!-- Stats -->
+    <section class="section stats stagger">
+      <div class="stat-box glass reveal-item">
+        <span class="stat-num" data-count="128000">0</span>
+        <span class="stat-label">Loans disbursed</span>
+      </div>
+      <div class="stat-box glass reveal-item">
+        <span class="stat-num" data-count="45000">0</span>
+        <span class="stat-label">Happy users</span>
+      </div>
+      <div class="stat-box glass reveal-item">
+        <span class="stat-num" data-count="4" data-suffix=" min">0</span>
+        <span class="stat-label">Avg. decision time</span>
+      </div>
+      <div class="stat-box glass reveal-item">
+        <span class="stat-num" data-count="4.8" data-decimal="1" data-suffix="/5">0</span>
+        <span class="stat-label">User rating</span>
+      </div>
+    </section>
+
+    <!-- Why Patahela -->
+    <section class="section stagger">
+      <h2 class="section-title reveal">Why people choose Patahela</h2>
+      <div class="feature-grid" id="featureCarousel">
+        <div class="feature-card glass reveal-item">
+          <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Instant decisions</h3>
+          <p>No waiting days for a call back — get an early result in minutes.</p>
+        </div>
+        <div class="feature-card glass reveal-item">
+          <div class="feature-icon"><i class="fa-solid fa-lock"></i></div>
+          <h3>Bank-level security</h3>
+          <p>Your details are encrypted and only used to verify your loan.</p>
+        </div>
+        <div class="feature-card glass reveal-item">
+          <div class="feature-icon"><i class="fa-solid fa-file-lines"></i></div>
+          <h3>No paperwork</h3>
+          <p>Everything happens on your phone — no printouts, no branch visits.</p>
+        </div>
+        <div class="feature-card glass reveal-item">
+          <div class="feature-icon"><i class="fa-solid fa-calendar-days"></i></div>
+          <h3>Flexible repayment</h3>
+          <p>Choose a period that fits you: 1, 3, 6, or 12 months.</p>
+        </div>
+        <div class="feature-card glass reveal-item">
+          <div class="feature-icon"><i class="fa-solid fa-handshake"></i></div>
+          <h3>Real human support</h3>
+          <p>A real person reviews and follows up — not a call center queue.</p>
+        </div>
+        <div class="feature-card glass reveal-item">
+          <div class="feature-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+          <h3>No hidden fees</h3>
+          <p>The amount you agree to is the amount you get. Nothing extra.</p>
+        </div>
+      </div>
+      <div class="carousel-dots" id="featureDots"></div>
+    </section>
+
+    <section class="dark-cta stagger">
+      <div class="balance-mock reveal-item">
+        <div class="balance-top">
+          <span class="balance-currency"><i class="fa-solid fa-wallet"></i> KES</span>
+          <span class="balance-eye"><i class="fa-solid fa-eye"></i></span>
+        </div>
+        <span class="balance-label">Available loan limit</span>
+        <div class="balance-amount">KES 500,000.00</div>
+        <div class="balance-actions">
+          <span><i class="fa-solid fa-arrows-rotate"></i> Repay</span>
+          <span><i class="fa-solid fa-envelope"></i> Request</span>
+          <span class="balance-plus">+</span>
+        </div>
+      </div>
+      <div class="dark-cta-copy">
+        <h2>Get your loan in 3 easy steps</h2>
+        <div class="dark-step reveal-item">
+          <span class="dark-step-icon"><i class="fa-solid fa-id-card"></i></span>
+          <div>
+            <strong>Sign up &amp; verify</strong>
+            <p>Share your name, phone, and ID — encrypted from the moment you type.</p>
+          </div>
+        </div>
+        <div class="dark-step reveal-item">
+          <span class="dark-step-icon"><i class="fa-solid fa-sack-dollar"></i></span>
+          <div>
+            <strong>Choose your loan</strong>
+            <p>Pick an amount between KES 50,000 and 500,000, and a repayment period.</p>
+          </div>
+        </div>
+        <div class="dark-step reveal-item">
+          <span class="dark-step-icon"><i class="fa-solid fa-circle-check"></i></span>
+          <div>
+            <strong>Get confirmed</strong>
+            <p>Your application reaches our team instantly for review and follow-up.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials stagger">
+      <h2 class="section-title reveal">Trusted by thousands</h2>
+      <div class="avatar-stack reveal-item">
+        <span class="avatar-stack-item">A</span>
+        <span class="avatar-stack-item">K</span>
+        <span class="avatar-stack-item">A</span>
+        <span class="avatar-stack-item">M</span>
+        <span class="avatar-stack-more">+45k</span>
+      </div>
+      <div class="testimonial-card glass reveal-item">
+        <div class="testimonial-head">
+          <span class="avatar">A</span>
+          <div>
+            <strong>Amara</strong>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          </div>
+        </div>
+        <p>"I applied on my lunch break and heard back before I got home."</p>
+        <span class="testimonial-loc">Lusaka, Zambia</span>
+      </div>
+      <div class="testimonial-card glass reveal-item">
+        <div class="testimonial-head">
+          <span class="avatar">K</span>
+          <div>
+            <strong>Kevin</strong>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          </div>
+        </div>
+        <p>"No queues, no branch visit. Straightforward and quick."</p>
+        <span class="testimonial-loc">Nairobi, Kenya</span>
+      </div>
+      <div class="testimonial-card glass reveal-item">
+        <div class="testimonial-head">
+          <span class="avatar">A</span>
+          <div>
+            <strong>Adjoa</strong>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          </div>
+        </div>
+        <p>"Felt safe entering my details. Support replied fast."</p>
+        <span class="testimonial-loc">Accra, Ghana</span>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq stagger" id="faqSection">
+      <h2 class="section-title reveal">Common questions</h2>
+      <details class="faq-item glass reveal-item">
+        <summary>How fast will I hear back?</summary>
+        <p>Most applicants get an early result within minutes, and full confirmation from our team the same day.</p>
+      </details>
+      <details class="faq-item glass reveal-item">
+        <summary>Is my information safe?</summary>
+        <p>Yes — your details are encrypted and only used to verify your identity and process your loan.</p>
+      </details>
+      <details class="faq-item glass reveal-item">
+        <summary>Do I need a smartphone?</summary>
+        <p>Any Android or basic smartphone works. Patahela is built to be light on data.</p>
+      </details>
+      <details class="faq-item glass reveal-item">
+        <summary>Are there hidden charges?</summary>
+        <p>No. The amount you agree to is the amount you receive — no surprise deductions.</p>
+      </details>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="cta-banner reveal">
+      <h2>Ready to get started?</h2>
+      <p>Apply now and get a decision today.</p>
+      <button class="btn btn-primary btn-lg" data-nav="view-form">Apply Now</button>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Patahela. Pata hela — Swahili for "get money".</p>
+    </footer>
+  </section>
+
+  <!-- ============ LEARN MORE (simple) ============ -->
+  <section id="view-learn" class="view">
+    <button class="back-btn" data-nav="view-landing"><i class="fa-solid fa-chevron-left"></i> Back</button>
+    <h2 class="section-title">About Patahela</h2>
+    <div class="card glass">
+      <p>Patahela connects you to short-term loans without branch visits or long paperwork. You share your details once, choose a loan amount and repayment period, and our team reviews and confirms your application directly.</p>
+      <ul class="about-list">
+        <li><i class="fa-solid fa-circle-check"></i> No hidden fees — the amount you agree to is the amount you get</li>
+        <li><i class="fa-solid fa-lock"></i> Your details are only used to verify and process your loan</li>
+        <li><i class="fa-solid fa-clipboard-check"></i> Every application reaches our team instantly for review</li>
+      </ul>
+      <button class="btn btn-primary btn-lg full-width" data-nav="view-form">Apply Now</button>
+    </div>
+  </section>
+
+  <!-- ============ APPLICATION FORM (DASHBOARD) ============ -->
+  <section id="view-form" class="view">
+    <button class="back-btn" data-nav="view-landing"><i class="fa-solid fa-chevron-left"></i> Back</button>
+    <h2 class="section-title">Loan application</h2>
+    <p class="section-sub">Takes about 2 minutes. Your progress is saved automatically.</p>
+
+    <form id="loanForm" novalidate>
+      <div class="card glass fade-card">
+        <h3 class="card-title">Personal details</h3>
+
+        <label class="field">
+          <span>Full name</span>
+          <input type="text" id="fullName" name="fullName" placeholder="e.g. Amina Njoroge" required>
+          <small class="error" data-error-for="fullName"></small>
+        </label>
+
+        <label class="field">
+          <span>Phone number</span>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. +254 7XX XXX XXX" required>
+          <small class="error" data-error-for="phone"></small>
+        </label>
+
+        <label class="field">
+          <span>National ID number</span>
+          <input type="text" id="idNumber" name="idNumber" placeholder="e.g. 12345678" required>
+          <small class="error" data-error-for="idNumber"></small>
+        </label>
+
+        <label class="field">
+          <span>Email <em>(optional)</em></span>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+        </label>
+
+        <label class="field">
+          <span>Create a password</span>
+          <input type="password" id="password" name="password" placeholder="At least 6 characters" required minlength="6">
+          <small class="error" data-error-for="password"></small>
+        </label>
+      </div>
+
+      <div class="card glass fade-card">
+        <h3 class="card-title">Loan details</h3>
+
+        <label class="field">
+          <span>Country</span>
+          <select id="country" name="country" required>
+            <option value="KES">🇰🇪 Kenya — KES</option>
+            <option value="ZMW">🇿🇲 Zambia — ZMW</option>
+            <option value="GHS">🇬🇭 Ghana — GHS</option>
+            <option value="UGX">🇺🇬 Uganda — UGX</option>
+            <option value="TZS">🇹🇿 Tanzania — TZS</option>
+            <option value="ZAR">🇿🇦 South Africa — ZAR</option>
+            <option value="XOF">🇨🇮 Côte d'Ivoire — XOF</option>
+            <option value="EGP">🇪🇬 Egypt — EGP</option>
+          </select>
+          <small class="error" data-error-for="country"></small>
+        </label>
+
+        <label class="field">
+          <span>Loan amount <em id="amountCurrencyTag">(KES)</em></span>
+          <select id="amount" name="amount" required>
+            <option value="">Select amount</option>
+          </select>
+          <small class="error" data-error-for="amount"></small>
+        </label>
+
+        <label class="field">
+          <span>Repayment period</span>
+          <select id="period" name="period" required>
+            <option value="">Select period</option>
+            <option value="1 month">1 month</option>
+            <option value="3 months">3 months</option>
+            <option value="6 months">6 months</option>
+            <option value="12 months">12 months</option>
+          </select>
+          <small class="error" data-error-for="period"></small>
+        </label>
+
+        <label class="field">
+          <span>Purpose</span>
+          <select id="purpose" name="purpose" required>
+            <option value="">Select purpose</option>
+            <option value="Business">Business</option>
+            <option value="School fees">School fees</option>
+            <option value="Emergency">Emergency</option>
+            <option value="Rent">Rent</option>
+            <option value="Other">Other</option>
+          </select>
+          <small class="error" data-error-for="purpose"></small>
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-lg full-width">Submit application</button>
+      <p class="fineprint"><i class="fa-solid fa-lock"></i> Secure application · No hidden fees · We'll be in touch shortly</p>
+    </form>
+  </section>
+
+</main>
+
+<!-- Bottom tab bar -->
+<nav class="tabbar glass" id="tabbar">
+  <span class="tab-indicator" id="tabIndicator"></span>
+  <button class="tab-btn active" data-tab="home" data-nav="view-landing">
+    <span class="tab-icon"><i class="fa-solid fa-house"></i></span><span class="tab-label">Home</span>
+  </button>
+  <button class="tab-btn" data-tab="apply" data-nav="view-form">
+    <span class="tab-icon"><i class="fa-solid fa-credit-card"></i></span><span class="tab-label">Apply</span>
+  </button>
+  <button class="tab-btn" data-tab="faq" data-scroll="faqSection">
+    <span class="tab-icon"><i class="fa-solid fa-circle-question"></i></span><span class="tab-label">FAQ</span>
+  </button>
+  <button class="tab-btn" data-tab="about" data-nav="view-learn">
+    <span class="tab-icon"><i class="fa-solid fa-circle-info"></i></span><span class="tab-label">About</span>
+  </button>
+</nav>
+
+<!-- ============ LOADING OVERLAY ============ -->
+<div id="loadingOverlay" class="overlay hidden">
+  <div class="loader-card glass">
+    <div class="loader-wave">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <p class="loader-text">Processing your application…</p>
+  </div>
+</div>
+
+<!-- ============ SUMMARY MODAL ============ -->
+<div id="summaryModal" class="overlay hidden">
+  <div class="modal glass">
+    <button id="closeModalX" class="modal-close-x" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <div id="modalDefaultState">
+      <div class="modal-check">
+        <div class="check-circle"><i class="fa-solid fa-check"></i></div>
+      </div>
+      <span class="badge badge-approved">Pre-Approved <i class="fa-solid fa-circle-check"></i></span>
+      <h3 class="modal-title">Application summary</h3>
+      <p class="modal-sub">This is an early, encouraging result — final confirmation happens once our team reviews your details.</p>
+
+      <dl class="summary-list" id="summaryList"></dl>
+
+      <button id="sheetBtn" class="btn btn-primary btn-lg full-width">
+        <i id="sheetBtnIcon" class="fa-solid fa-paper-plane"></i> <span id="sheetBtnLabel">Send</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
